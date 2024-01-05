@@ -100,7 +100,7 @@ public class UserController
 	        System.out.println("Username: " + username);
 	        System.out.println("Exam Start Time: " + startExamTimeDate);
 	        System.out.println("User Responses: " + responses);*/
-	        
+	        System.out.println("Answers has been submitted calculation will start..");
 	        service.calculatePoints(username,startExamTimeDate,responses);
 
 	     
