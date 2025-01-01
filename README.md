@@ -26,7 +26,6 @@ This application was collaboratively developed by a three-member team, led by th
 - **Hibernate/JPA**: For database interaction.
 - **MySQL**: To store user information, questions, and results.
 - **Java Mail API**: For sending email notifications.
-- **Spring Security**: For authentication and authorization.
 - **Maven**: For project management and dependency resolution.
 
 ---
@@ -88,16 +87,24 @@ big5-personality-test-backend/
 ├── src/
 │   ├── main/
 │   │   ├── java/
-│   │   │   ├── com.big5/
-│   │   │   │   ├── controller/   # REST controllers for API endpoints
-│   │   │   │   ├── service/      # Business logic and services
-│   │   │   │   ├── repository/   # JPA repositories for database operations
-│   │   │   │   └── model/        # Entity classes representing database tables
+│   │   │   ├── com\app\demo/
+│   │   │   │   ├── controller/               # REST controllers for API endpoints
+│   │   │   │   │   ├──UserController.java
+│   │   │   │   ├── service/                  # Business logic and services
+│   │   │   │   │   ├──UserService.java
+│   │   │   │   │   ├──UserServiceImpl.java
+│   │   │   │   ├── dao/                      # JPA repositories for database operations
+│   │   │   │   │   ├──TestRepo.java
+│   │   │   │   │   ├──UserRepo.java
+│   │   │   │   └── bean/                     # Entity classes representing database tables
+│   │   │   │   │   ├──Exam.java
+│   │   │   │   │   ├──Test.java
+│   │   │   │   │   ├──User.java
+│   │   │   │   │   ├──UserResponses.java
 │   │   └── resources/
-│   │       ├── application.properties  # Configuration properties
-│   │       └── templates/       # Email templates
-├── pom.xml                      # Maven configuration
-└── README.md                    # Project documentation
+│   │       ├── application.properties        # Configuration properties
+├── pom.xml                                   # Maven configuration
+└── README.md                                 # Project documentation
 ```
 
 ---
